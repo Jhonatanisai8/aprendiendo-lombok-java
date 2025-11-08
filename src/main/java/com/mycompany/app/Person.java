@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Getter(value = AccessLevel.PUBLIC)
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Person {
 
     //@Setter
