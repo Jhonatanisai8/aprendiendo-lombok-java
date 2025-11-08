@@ -1,13 +1,13 @@
 package com.mycompany.app;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Setter(value = AccessLevel.PUBLIC)
 @Getter(value = AccessLevel.PUBLIC)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person {
 
     //@Setter
