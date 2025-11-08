@@ -1,27 +1,15 @@
 package com.mycompany.app;
 
+import lombok.extern.java.Log;
+
 import java.time.LocalDate;
 
-
+@Log
 public class App {
     public static void main(String[] args) {
         //example1();
         // example2();
-        Phone phone = Phone.builder()
-                .model("iPhone 13")
-                .brand("Apple")
-                .build();
-        System.out.println(phone.toString());
-        Person person1 = Person.create()
-                .id(1L)
-                .name("Isaias")
-                .lastName("Gonzalez")
-                .email("isaisGonzales@gmail.com")
-                .age(23)
-                .phoneNumber(1234567890)
-                .dateOfBirth(LocalDate.now())
-                .build();
-        System.out.println(person1.toString());
+        example3();
     }
 
     public static void example1() {
@@ -51,5 +39,25 @@ public class App {
         Car nissan = Car.createCar("Toyota", "Corolla", 2020);
         System.out.println("Son iguales? " + toyota.equals(nissan));
         System.out.println("Son iguales? " + (toyota == nissan));
+    }
+
+    public static void example3() {
+        Phone phone = Phone.builder()
+                .model("iPhone 13")
+                .brand("Apple")
+                .build();
+        System.out.println(phone.toString());
+        Person person1 = Person.create()
+                .id(1L)
+                .name("Isaias")
+                .lastName("Gonzalez")
+                .email("isaisGonzales@gmail.com")
+                .age(23)
+                .phoneNumber(1234567890)
+                .dateOfBirth(LocalDate.now())
+                .build();
+        System.out.println(person1.toString());
+        System.out.println("-------------------------");
+        log.info(person1.toString());
     }
 }
