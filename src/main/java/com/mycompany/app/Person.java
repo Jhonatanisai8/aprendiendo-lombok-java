@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@EqualsAndHashCode(of = {"id", "name"}) //generar los metodos equals y hashCode basados en id y name
 public class Person {
 
     //@Setter
