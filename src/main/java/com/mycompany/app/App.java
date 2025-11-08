@@ -6,8 +6,22 @@ import java.time.LocalDate;
 public class App {
     public static void main(String[] args) {
         //example1();
-        example2();
-
+        // example2();
+        Phone phone = Phone.builder()
+                .model("iPhone 13")
+                .brand("Apple")
+                .build();
+        System.out.println(phone.toString());
+        Person person1 = Person.create()
+                .id(1L)
+                .name("Isaias")
+                .lastName("Gonzalez")
+                .email("isaisGonzales@gmail.com")
+                .age(23)
+                .phoneNumber(1234567890)
+                .dateOfBirth(LocalDate.now())
+                .build();
+        System.out.println(person1.toString());
     }
 
     public static void example1() {
