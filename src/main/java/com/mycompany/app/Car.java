@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor(staticName = "create") //nombre del metodo estatico para el constructor
+@AllArgsConstructor(staticName = "createCar") //nombre del metodo estatico para el constructor
 public class Car {
     private String make;
     private String model;
